@@ -1,10 +1,16 @@
+@font-face {
+  font-family: 'blanch';
+  src: url('BLANCH_CONDENSED_LIGHT.ttf')  format('truetype');
 
+  font-family: 'museo';
+  src: url('museo-500-webfont.woff') format('woff');
+}
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: url('https://github.com/amandamiche/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+	background: url('../assets/textures/fabric_plaid.png');
   padding: 10px 30px;
 }
 
@@ -15,8 +21,10 @@ nav {
 }
 
 div#left a {
-	margin: 0 20px;
+	margin: 5px;
+  margin-left: 50px;
   color: rgb(105,105,105);
+  font-family: 'museo', Fallback, sans-serif;
 }
 
 #right {
@@ -44,7 +52,7 @@ div#right a{
 
 #slider{
   position: relative;
-  background: url('https://github.com/amandamiche/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  background: url('../assets/textures/fabric_plaid.png');
   
 }
 
@@ -77,14 +85,16 @@ div#right a{
 }
 
 #text{
-  background: url('https://github.com/amandamiche/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  background: url('../assets/textures/fabric_plaid.png');
   display: flex;
   justify-content: center;
   color: rgb(105,105,105);
+  font-family: 'blanch', Fallback, sans-serif;
+  font-size: 18px;
 }
 
 #gallery {
-  background: url('https://github.com/amandamiche/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  background: url('../assets/textures/fabric_plaid.png');
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -102,14 +112,14 @@ div#right a{
 #view{
   display: flex;
   justify-content: center;
-  	background: url('https://github.com/amandamiche/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  	background: url('../assets/textures/fabric_plaid.png');
   padding: 20px 30px;
 }
 
 .button {
 	text-decoration: none;
 	color: #fff;
-	background: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+	background: url('../assets/textures/az_subtle.png');
 	background-color: #a6a69d;
 	background-blend-mode: multiply;
 	padding: 10px 50px;
@@ -137,7 +147,7 @@ div#right a{
 }
 
 footer{
-  background: url('https://github.com/amandamiche/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+  background: url('../assets/textures/az_subtle.png');
   background-color: #a6a69d;
 	background-blend-mode: multiply;
   padding: 10px 30px;
@@ -165,20 +175,20 @@ footer{
 }
 
 #banner{
-  font-size: 11px;
+  font-size: 12px;
   display: flex;
   align-items: center;
 }
 
 #lefty img{
-  width: 60px;
+  width: 20%;
   padding: 0px 3px;
 }
 
 #banner a{
   color: rgb(105,105,105);
   padding: 0px 2px;
-  
+  margin-left: 5px;
 }
 
 #middle{
@@ -192,6 +202,7 @@ footer{
 
 #middle p{
   margin: 0px;
+  padding: 0px 15px 0px 0px;
 }
 
 #righty{
